@@ -1,0 +1,41 @@
+.boxes{
+  padding: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: fit-content;
+  gap: 10px;
+}
+
+.box{
+  width: 80px;
+  height: 80px;
+}
+
+.box.visible{
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.box.hidden{
+  opacity: 0;
+  cursor: initial;
+}
+.box.selected{
+  background-color: green;
+  cursor: not-allowed;
+}
+
+.custom-button {
+  padding: 10px 20px;
+  background-color: #f0e9d2; /* Light beige background similar to the image */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 5px 5px 0px -1px rgba(0, 0, 0, 0.8); /* Sharp shadow with no blur */
+  transition: all 0.3s ease;
+}
+
+.custom-button:hover {
+  box-shadow: 7px 7px 0px 3px rgba(0, 0, 0, 0.3); /* Slightly larger and lighter sharp shadow on hover */
+}
